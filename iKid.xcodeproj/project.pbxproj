@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		945F71601DCBBA170065F6B8 /* FlipAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F715F1DCBBA170065F6B8 /* FlipAnimationController.swift */; };
+		945F71641DCBDFB30065F6B8 /* PageImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F71621DCBDFB30065F6B8 /* PageImageViewController.swift */; };
+		945F71651DCBDFB30065F6B8 /* PageImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945F71631DCBDFB30065F6B8 /* PageImageViewController.xib */; };
 		94AD1A901DCBAA1F00FFF6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD1A8F1DCBAA1F00FFF6D9 /* AppDelegate.swift */; };
 		94AD1A921DCBAA1F00FFF6D9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD1A911DCBAA1F00FFF6D9 /* PageViewController.swift */; };
 		94AD1A951DCBAA1F00FFF6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AD1A931DCBAA1F00FFF6D9 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		945F715F1DCBBA170065F6B8 /* FlipAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipAnimationController.swift; sourceTree = "<group>"; };
+		945F71621DCBDFB30065F6B8 /* PageImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageImageViewController.swift; sourceTree = "<group>"; };
+		945F71631DCBDFB30065F6B8 /* PageImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageImageViewController.xib; sourceTree = "<group>"; };
 		94AD1A8C1DCBAA1F00FFF6D9 /* iKid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AD1A8F1DCBAA1F00FFF6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94AD1A911DCBAA1F00FFF6D9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				945F715F1DCBBA170065F6B8 /* FlipAnimationController.swift */,
+				945F71621DCBDFB30065F6B8 /* PageImageViewController.swift */,
+				945F71631DCBDFB30065F6B8 /* PageImageViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				94AD1A9A1DCBAA1F00FFF6D9 /* LaunchScreen.storyboard in Resources */,
 				94AD1A971DCBAA1F00FFF6D9 /* Assets.xcassets in Resources */,
 				94AD1A951DCBAA1F00FFF6D9 /* Main.storyboard in Resources */,
+				945F71651DCBDFB30065F6B8 /* PageImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +283,7 @@
 				94AD1A921DCBAA1F00FFF6D9 /* PageViewController.swift in Sources */,
 				945F71601DCBBA170065F6B8 /* FlipAnimationController.swift in Sources */,
 				94AD1A901DCBAA1F00FFF6D9 /* AppDelegate.swift in Sources */,
+				945F71641DCBDFB30065F6B8 /* PageImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
