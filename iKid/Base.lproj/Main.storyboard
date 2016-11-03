@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="279" y="-270"/>
         </scene>
-        <!--Item 2-->
+        <!--Knock-Knock-->
         <scene sceneID="rZN-3B-p55">
             <objects>
-                <viewController id="5z2-E9-TtU" sceneMemberID="viewController">
+                <viewController id="5z2-E9-TtU" customClass="PageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WW4-1x-V1d"/>
                         <viewControllerLayoutGuide type="bottom" id="hRm-K2-BR4"/>
@@ -33,15 +34,147 @@
                     <view key="view" contentMode="scaleToFill" id="08g-Cf-lVO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Knock1" translatesAutoresizingMaskIntoConstraints="NO" id="4uE-5R-rNK"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruc-O6-ZP2">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="xYt-O2-NRX" kind="show" id="O7x-lB-KaK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4uE-5R-rNK" firstAttribute="centerY" secondItem="08g-Cf-lVO" secondAttribute="centerY" id="98q-XS-Ajd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ruc-O6-ZP2" secondAttribute="trailing" constant="8" id="FR6-xl-Ly8"/>
+                            <constraint firstItem="hRm-K2-BR4" firstAttribute="top" secondItem="Ruc-O6-ZP2" secondAttribute="bottom" constant="8" id="GEx-dA-UR0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4uE-5R-rNK" secondAttribute="trailing" id="W2b-sp-OOn"/>
+                            <constraint firstItem="4uE-5R-rNK" firstAttribute="leading" secondItem="08g-Cf-lVO" secondAttribute="leadingMargin" id="apo-5g-Htr"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="drJ-mI-uBZ"/>
+                    <tabBarItem key="tabBarItem" title="Knock-Knock" id="drJ-mI-uBZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6C-Hg-9Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="57"/>
+            <point key="canvasLocation" x="2324" y="-270"/>
         </scene>
-        <!--Item 1-->
+        <!--Page View Controller-->
+        <scene sceneID="8ds-4Z-7ck">
+            <objects>
+                <viewController id="xYt-O2-NRX" customClass="PageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sq0-xg-O4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="afb-Ve-ve7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B0Y-6Y-ber">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Knock2" translatesAutoresizingMaskIntoConstraints="NO" id="5yW-Lo-MvF"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv1-yd-fLP">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="sFw-dx-Pvf" kind="show" id="91O-9Z-IPS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xv1-yd-fLP" secondAttribute="trailing" constant="8" id="761-Qy-bq1"/>
+                            <constraint firstItem="afb-Ve-ve7" firstAttribute="top" secondItem="Xv1-yd-fLP" secondAttribute="bottom" constant="8" id="BeF-ft-sGk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5yW-Lo-MvF" secondAttribute="trailing" id="DBb-iA-Af5"/>
+                            <constraint firstItem="5yW-Lo-MvF" firstAttribute="centerY" secondItem="B0Y-6Y-ber" secondAttribute="centerY" id="idg-m2-ppe"/>
+                            <constraint firstItem="5yW-Lo-MvF" firstAttribute="leading" secondItem="B0Y-6Y-ber" secondAttribute="leadingMargin" id="wjC-Wb-YLX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xa1-Vw-XBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3072" y="-271"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="uWP-gY-bw3">
+            <objects>
+                <viewController id="sFw-dx-Pvf" customClass="PageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="534-cx-i25"/>
+                        <viewControllerLayoutGuide type="bottom" id="SLE-w4-rDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RmX-Fu-4JD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Knock3" translatesAutoresizingMaskIntoConstraints="NO" id="eag-Pq-wPA"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM8-0x-aX7">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="NtB-yn-Cfe" kind="show" id="ElO-hX-uzQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eag-Pq-wPA" secondAttribute="trailing" id="JLH-Qc-vaN"/>
+                            <constraint firstItem="eag-Pq-wPA" firstAttribute="centerY" secondItem="RmX-Fu-4JD" secondAttribute="centerY" id="M0f-WM-c5S"/>
+                            <constraint firstItem="SLE-w4-rDu" firstAttribute="top" secondItem="bM8-0x-aX7" secondAttribute="bottom" constant="8" id="Q5z-Bj-QCE"/>
+                            <constraint firstItem="eag-Pq-wPA" firstAttribute="leading" secondItem="RmX-Fu-4JD" secondAttribute="leadingMargin" id="U6r-cj-tFN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bM8-0x-aX7" secondAttribute="trailing" constant="8" id="VNv-GW-FBu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6x-KQ-kSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3826" y="-269"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="skb-ae-N6V">
+            <objects>
+                <viewController id="NtB-yn-Cfe" customClass="PageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ysf-FY-7qj"/>
+                        <viewControllerLayoutGuide type="bottom" id="LCl-LE-YeZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fSP-Bm-aCy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Knock4" translatesAutoresizingMaskIntoConstraints="NO" id="2wC-d7-hci"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2wC-d7-hci" firstAttribute="leading" secondItem="fSP-Bm-aCy" secondAttribute="leadingMargin" id="FZP-vq-b7R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2wC-d7-hci" secondAttribute="trailing" id="Us9-x0-7at"/>
+                            <constraint firstItem="2wC-d7-hci" firstAttribute="centerY" secondItem="fSP-Bm-aCy" secondAttribute="centerY" id="krk-Y3-T2G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HV-mD-fSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4584" y="-265"/>
+        </scene>
+        <!--Doge-->
+        <scene sceneID="jhz-NX-lyf">
+            <objects>
+                <viewController id="ICT-kD-kjc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lIb-sJ-YLh"/>
+                        <viewControllerLayoutGuide type="bottom" id="lDH-QM-g5v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8GQ-4f-gF0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Doge" id="n0r-BS-tOv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jD5-tB-ljR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2324" y="487"/>
+        </scene>
+        <!--SOON-->
         <scene sceneID="bLx-eR-dwS">
             <objects>
                 <viewController id="r4w-aH-Xfe" sceneMemberID="viewController">
@@ -58,17 +191,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next?"/>
                                 <connections>
-                                    <segue destination="sPX-MB-b56" kind="show" id="G6J-9J-STu"/>
+                                    <segue destination="sPX-MB-b56" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="G6J-9J-STu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="GtO-gc-Clp"/>
+                    <tabBarItem key="tabBarItem" title="SOON" id="GtO-gc-Clp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qg3-ea-CcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="-597"/>
+            <point key="canvasLocation" x="2324" y="-985"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LnI-Jb-mBQ">
@@ -86,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNP-gL-OKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2868" y="-598"/>
+            <point key="canvasLocation" x="3078" y="-986"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hx1-vj-AGb">
@@ -101,6 +234,7 @@
                     <connections>
                         <segue destination="r4w-aH-Xfe" kind="relationship" relationship="viewControllers" id="iHr-yR-ATr"/>
                         <segue destination="5z2-E9-TtU" kind="relationship" relationship="viewControllers" id="KeD-fK-OdM"/>
+                        <segue destination="ICT-kD-kjc" kind="relationship" relationship="viewControllers" id="qEy-nn-j18"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbA-BB-1JU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,4 +242,10 @@
             <point key="canvasLocation" x="1163" y="-270"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Knock1" width="609" height="247"/>
+        <image name="Knock2" width="609" height="245"/>
+        <image name="Knock3" width="609" height="191"/>
+        <image name="Knock4" width="607" height="209"/>
+    </resources>
 </document>

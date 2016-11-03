@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		945F71601DCBBA170065F6B8 /* FlipAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F715F1DCBBA170065F6B8 /* FlipAnimationController.swift */; };
 		94AD1A901DCBAA1F00FFF6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD1A8F1DCBAA1F00FFF6D9 /* AppDelegate.swift */; };
-		94AD1A921DCBAA1F00FFF6D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD1A911DCBAA1F00FFF6D9 /* ViewController.swift */; };
+		94AD1A921DCBAA1F00FFF6D9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD1A911DCBAA1F00FFF6D9 /* PageViewController.swift */; };
 		94AD1A951DCBAA1F00FFF6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AD1A931DCBAA1F00FFF6D9 /* Main.storyboard */; };
 		94AD1A971DCBAA1F00FFF6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AD1A961DCBAA1F00FFF6D9 /* Assets.xcassets */; };
 		94AD1A9A1DCBAA1F00FFF6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AD1A981DCBAA1F00FFF6D9 /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		945F715F1DCBBA170065F6B8 /* FlipAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipAnimationController.swift; sourceTree = "<group>"; };
 		94AD1A8C1DCBAA1F00FFF6D9 /* iKid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AD1A8F1DCBAA1F00FFF6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94AD1A911DCBAA1F00FFF6D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94AD1A911DCBAA1F00FFF6D9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		94AD1A941DCBAA1F00FFF6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94AD1A961DCBAA1F00FFF6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94AD1A991DCBAA1F00FFF6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		945F71611DCBC1650065F6B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				945F715F1DCBBA170065F6B8 /* FlipAnimationController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		94AD1A831DCBAA1E00FFF6D9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +107,9 @@
 		94AD1A8E1DCBAA1F00FFF6D9 /* iKid */ = {
 			isa = PBXGroup;
 			children = (
+				945F71611DCBC1650065F6B8 /* Controllers */,
 				94AD1A8F1DCBAA1F00FFF6D9 /* AppDelegate.swift */,
-				94AD1A911DCBAA1F00FFF6D9 /* ViewController.swift */,
+				94AD1A911DCBAA1F00FFF6D9 /* PageViewController.swift */,
 				94AD1A931DCBAA1F00FFF6D9 /* Main.storyboard */,
 				94AD1A961DCBAA1F00FFF6D9 /* Assets.xcassets */,
 				94AD1A981DCBAA1F00FFF6D9 /* LaunchScreen.storyboard */,
@@ -262,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94AD1A921DCBAA1F00FFF6D9 /* ViewController.swift in Sources */,
+				94AD1A921DCBAA1F00FFF6D9 /* PageViewController.swift in Sources */,
+				945F71601DCBBA170065F6B8 /* FlipAnimationController.swift in Sources */,
 				94AD1A901DCBAA1F00FFF6D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +526,7 @@
 				94AD1AB61DCBAA1F00FFF6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94AD1AB71DCBAA1F00FFF6D9 /* Build configuration list for PBXNativeTarget "iKidTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				94AD1AB91DCBAA1F00FFF6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94AD1ABA1DCBAA1F00FFF6D9 /* Build configuration list for PBXNativeTarget "iKidUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				94AD1ABC1DCBAA1F00FFF6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
