@@ -10,9 +10,15 @@
         <scene sceneID="8mk-FV-dj4">
             <objects>
                 <navigationController id="Ggu-EP-L79" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Skf-OY-R48">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Skf-OY-R48">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.59431916480000002" green="0.80909550190000001" blue="0.47092002630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" red="0.74696415660000004" green="0.85643875599999997" blue="0.45660108329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="fif-Eh-REa" kind="relationship" relationship="rootViewController" id="yHW-YT-oep"/>
@@ -111,7 +117,7 @@
                         <viewControllerLayoutGuide type="top" id="ysf-FY-7qj"/>
                         <viewControllerLayoutGuide type="bottom" id="LCl-LE-YeZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="fSP-Bm-aCy">
+                    <view key="view" contentMode="scaleToFill" id="fSP-Bm-aCy">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -129,12 +135,12 @@
         <!--Doge-->
         <scene sceneID="jhz-NX-lyf">
             <objects>
-                <viewController id="ICT-kD-kjc" customClass="PageImageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController definesPresentationContext="YES" id="ICT-kD-kjc" customClass="PageImageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lIb-sJ-YLh"/>
                         <viewControllerLayoutGuide type="bottom" id="lDH-QM-g5v"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="8GQ-4f-gF0">
+                    <view key="view" contentMode="scaleToFill" id="8GQ-4f-gF0">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,7 +169,7 @@
                         <viewControllerLayoutGuide type="top" id="k3i-jd-mO3"/>
                         <viewControllerLayoutGuide type="bottom" id="Mlk-YL-Ylg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="qZX-yh-Vfj">
+                    <view key="view" contentMode="scaleToFill" id="qZX-yh-Vfj">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -181,7 +187,7 @@
         <!--SOON-->
         <scene sceneID="bLx-eR-dwS">
             <objects>
-                <viewController id="r4w-aH-Xfe" customClass="PageImageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="flipHorizontal" id="r4w-aH-Xfe" customClass="PageImageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aSU-SO-jQC"/>
                         <viewControllerLayoutGuide type="bottom" id="V9g-cV-D1j"/>
@@ -210,7 +216,7 @@
         <!--Page Image View Controller-->
         <scene sceneID="LnI-Jb-mBQ">
             <objects>
-                <viewController id="sPX-MB-b56" customClass="PageImageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="sPX-MB-b56" customClass="PageImageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VAF-97-jJH"/>
                         <viewControllerLayoutGuide type="bottom" id="F7l-WY-LG4"/>
@@ -256,15 +262,17 @@
             </objects>
             <point key="canvasLocation" x="3784" y="-984"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home-->
         <scene sceneID="hx1-vj-AGb">
             <objects>
-                <tabBarController id="fif-Eh-REa" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="TEx-Oy-nhX"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="7Og-cH-Iyp">
+                <tabBarController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overFullScreen" id="fif-Eh-REa" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Home" id="TEx-Oy-nhX"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="7Og-cH-Iyp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.59431916480000002" green="0.80909550190000001" blue="0.47092002630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="r4w-aH-Xfe" kind="relationship" relationship="viewControllers" id="iHr-yR-ATr"/>

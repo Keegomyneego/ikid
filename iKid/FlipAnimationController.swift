@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class FlipAnimationController : NSObject, UIViewControllerAnimatedTransitioning {
+class FlipAnimationController : NSObject, UIViewControllerAnimatedTransitioning, UINavigationControllerDelegate {
 
     var operation: UINavigationControllerOperation?
 
@@ -30,6 +30,10 @@ class FlipAnimationController : NSObject, UIViewControllerAnimatedTransitioning 
         case .Backward: return .transitionFlipFromLeft
         }
     }
+
+    //--------------------------------------------------------------------------------
+    // UIViewControllerAnimatedTransitioning overrides
+    //--------------------------------------------------------------------------------
 
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         switch direction {
@@ -54,5 +58,17 @@ class FlipAnimationController : NSObject, UIViewControllerAnimatedTransitioning 
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             }
         )
+    }
+
+    //--------------------------------------------------------------------------------
+    // UINavigationControllerDelegate overrides
+    //--------------------------------------------------------------------------------
+
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+        // Set flip direction
+        self.operation = operation
+
+        return self
     }
 }

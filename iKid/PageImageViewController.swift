@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageImageViewController: UIViewController, UINavigationControllerDelegate {
+class PageImageViewController: UIViewController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
 
     let flipAnimationController = FlipAnimationController()
 
@@ -53,7 +53,7 @@ class PageImageViewController: UIViewController, UINavigationControllerDelegate 
         super.viewDidAppear(animated)
 
         // Delegate some navigation controlling logic to this controller
-        navigationController?.delegate = self
+        navigationController?.delegate = flipAnimationController
     }
 
     //--------------------------------------------------------------------------------
